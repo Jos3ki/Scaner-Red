@@ -37,4 +37,4 @@ Este escáner en PowerShell automatiza la obtención de información clave de lo
 Ejecuta el script de PowerShell principal:
 
 ```powershell
-.\Scanner.ps1
+.\Script6.ps1
