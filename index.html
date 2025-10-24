@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js"></script>
+    <title>Reporte de Escaneos de Red</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    
+</head>
+<body>
+    <div class="min-h-screen">
+        <header>
+            <div class="container">
+                <div class="logo-container">
+                    <img src="assets/Fimaz.png" alt="Logo Fimaz" class="logo">
+                    <img src="assets/mysql.svg" alt="Logo MySQL" class="logo">
+                </div>
+                
+            </div>
+        </header>
+
+        <main class="container">
+            <div id="status-guide-container" class="status-guide-container hidden">
+                <div class="status-guide">
+                    <div class="guide-item">
+                        <span class="status-dot active"></span>
+                        <span>Puertos Abiertos</span>
+                    </div>
+                    <div class="guide-item">
+                        <span class="status-dot inactive"></span>
+                        <span>No se encontraron Puertos</span>
+                    </div>
+                    <div class="guide-item">                                                                                                                                           
+             <span class="material-icons change-alert-icon">autorenew</span>                                                                                                 
+            <span>Cambio de IP</span>                                                                                                                              
+         </div>                                                                                                                                                               
+                </div>
+            </div>
+            <div class="text-center mb-12">
+                <h2 class="main-title">Reportes de Red</h2>
+            </div>
+
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <span class="material-icons">search</span>
+                    <input type="text" id="scanSearch" placeholder="Buscar por IP, host o MAC...">
+                </div>
+                <button id="showAllBtn">
+                    <span class="material-icons">document_scanner</span>
+                    <span>Mostrar todos los escaneos</span>
+                </button>
+            </div>
+
+            <div class="card-container" id="reporteContainer">
+                <p class="initial-message">Usa el buscador o presiona 'Mostrar todos los escaneos' para ver los resultados.</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="historyModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Historial del Activo (<span id="modalMac"></span>)</h2>
+                <button class="close-btn" id="closeModalBtn">&times;</button>
+            </div>
+            <div id="historyDetails" class="history-details">
+                </div>
+            <p id="loadingHistory" style="text-align: center; font-weight: bold; margin-top: 10px;" class="hidden">Cargando historial...</p>
+        </div>
+    </div>
+
+</body>
+</html>
