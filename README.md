@@ -1,4 +1,4 @@
-# 🔍 Network Scanner Pro
+# 🔍 Network Scanner
 
 > Herramienta robusta de escaneo de red diseñada para la **auditoría de activos** y el **monitoreo de infraestructura**. Automatiza la recopilación de datos críticos de dispositivos conectados y almacena la información de forma persistente.
 
@@ -8,7 +8,7 @@ Este escáner en PowerShell automatiza la obtención de información clave de lo
 
 | Tipo de Dato | Detalle |
 | :--- | :--- |
-| **Identificación** | Dirección **IP** y **Hostname** del equipo activo. |
+| **Identificación** | Dirección **IP**, **Hostname** del equipo activo y **Fabricante** del equipo. |
 | **Hardware** | Dirección **MAC** del equipo. |
 | **Servicios** | **Puertos** TCP abiertos y su protocolo asociado. |
 | **Persistencia** | Almacenamiento de todos los resultados en una base de datos centralizada. |
