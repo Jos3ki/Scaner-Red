@@ -25,12 +25,12 @@ Este escáner en PowerShell automatiza la obtención de información clave de lo
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone [https://www.youtube.com/watch?v=k5dxsrEeJ8s](https://www.youtube.com/watch?v=k5dxsrEeJ8s)
-    cd [nombre-del-repo]
+    git clone https://github.com/Jos3ki/Scaner-Red/
+    cd Scaner-Red
     ```
 
 2.  **Configuración de Credenciales (CRÍTICO):**
-    Crea un archivo llamado **`.env`** o **`config.ini`** en la raíz (está ignorado por Git) e ingresa tus datos de conexión a la BD.
+    Modifica los archivos api.php y el script.ps1 con los datos de conexion para la Base de datos, verifica que el nombre de la BD y de las tablas coincida (usa el archivo .sql para generar la BD lista para empezar a usarse)
 
 ## 💻 Uso
 
