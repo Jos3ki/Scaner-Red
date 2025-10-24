@@ -17,9 +17,9 @@ Este escáner en PowerShell automatiza la obtención de información clave de lo
 
 ### Prerrequisitos
 
-* **Lenguaje:** Necesitas tener instalado **PowerShell** (funciona en Windows).
+* **Lenguaje:** Necesitas tener instalado **PowerShell** (este proyecto actualmente solo funciona en Windows 11 y version de PS mayor a 5.1).
 * **Base de Datos:** Acceso a un servidor **[MySQL / PostgreSQL]**.
-* **ODBC:** El driver **[Nombre del Driver ODBC]** debe estar instalado.
+* **ODBC:** El driver **[Mysql/Connector/ODBC 9.5.0]** debe estar instalado.
 
 ### Instalación y Configuración
 
