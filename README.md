@@ -38,7 +38,7 @@ Ejecuta el script de PowerShell principal:
 
 ```powershell
 .\Script6.ps1
-
+```
 
 
 ## 🚀 Metodología del Proyecto: eXtreme Programming (XP)
