@@ -38,3 +38,37 @@ Ejecuta el script de PowerShell principal:
 
 ```powershell
 .\Script6.ps1
+
+
+
+## 🚀 Metodología del Proyecto: eXtreme Programming (XP)
+
+Este proyecto de **Servicio de Auditoría de Sistema en C++** se desarrolló utilizando la metodología **eXtreme Programming (XP)**. Elegimos este enfoque Ágil por su adaptabilidad, su énfasis en la **calidad del código** y su eficiencia para un equipo pequeño de tres personas.
+
+### 🎯 Principales Prácticas y Justificación
+
+| Criterio Clave | Práctica de XP Aplicada | Beneficio para el Proyecto |
+| :--- | :--- | :--- |
+| **Calidad y Rendimiento (C++)** | **Pair Programming (Programación en Parejas)** y **Refactorización Constante** | Asegura una revisión de código continua, minimiza errores y optimiza el rendimiento del ejecutable en C++ que corre como servicio. |
+| **Equipo de 3 Personas** | **Rotación de Roles (Driver, Tester/Navigator, Customer Proxy)** | Maximiza el conocimiento colectivo (Propiedad Colectiva) y asegura que siempre haya una persona enfocada en la planificación y la revisión de calidad (QA). |
+| **Integración Constante** | **Integración Continua (CI)** y **Pruebas Unitarias** | El código se integra al `main` varias veces al día para mantener la estabilidad. Cada componente (ej., `getLocalIP`) tiene una prueba para garantizar su fiabilidad. |
+
+***
+
+### ⚙️ Procesos Fundamentales Aplicados
+
+1.  **Integración Continua (CI):** El código se fusionó al repositorio principal varias veces al día. Esto fue crucial para detectar y resolver conflictos entre las librerías de red (`Winsock`) y el conector de la base de datos (`MySQL Connector/C++`) de manera temprana.
+2.  **Refactorización Constante:** Mejoramos continuamente el diseño del código para mantenerlo limpio y legible, sin alterar su funcionalidad externa, lo cual facilita el mantenimiento a largo plazo del servicio.
+3.  **Pruebas Unitarias:** Se implementaron pruebas para las funciones clave del sistema, garantizando que el servicio de auditoría siempre devuelva datos correctos y válidos.
+
+***
+
+### 🔄 Fases de Desarrollo
+
+El proyecto siguió un ciclo iterativo (Sprints de 1 semana) con las siguientes fases:
+
+| Fase | Enfoque Principal | Hito de Finalización |
+| :--- | :--- | :--- |
+| **Exploración** | Configuración inicial y enlace de librerías. | El ejecutable compila y se conecta a MariaDB con éxito. |
+| **Iteraciones** | Desarrollo de las **Historias de Usuario (HU)** y pruebas bajo el usuario **SYSTEM** (verificado con **PsExec**). |
+| **Puesta en Producción** | Despliegue e instalación final. | El servicio se instala con **NSSM** (Non-Sucking Service Manager) y arranca automáticamente al iniciar Windows. |
